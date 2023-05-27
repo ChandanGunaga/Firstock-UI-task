@@ -20,7 +20,7 @@ const Details = () => {
           options={chartData3.options}
           series={chartData3.series}
           type="line"
-          height={200}    
+          height={250}    
         />
       </div>
 
