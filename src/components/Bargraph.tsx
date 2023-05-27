@@ -55,9 +55,6 @@ export const chartData2 = {
     grid: {
       show: true,
     },
-    yaxis: {
-      show: false,
-    },
     xaxis: {
       show: false,
       labels: {
@@ -66,6 +63,9 @@ export const chartData2 = {
     },
     tooltip: {
       enabled: false,
+    },
+    yaxis: {
+      show: false,
     },
     legend: {
       show: false,

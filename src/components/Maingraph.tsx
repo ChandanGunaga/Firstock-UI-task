@@ -47,8 +47,11 @@ export const chartData3 = {
       lines: {
         show: false,
       },
+      show: false,
     },
+    
     yaxis: {
+      
       title: {
         show: false,
       },
@@ -57,6 +60,7 @@ export const chartData3 = {
       lines: {
         show: true,
       },
+      show: false,
     },
     grid: {
       show: false,

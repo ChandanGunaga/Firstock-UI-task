@@ -1,47 +1,42 @@
-@import '../../assets/sass/main'; 
+@import "../../assets/sass/main";
 
-.wrapper{
-    flex: 1;
-   display: flex;
-   flex-direction: column;
-   gap: 18px;
-   height: auto;
-   min-height: 100vh;
-   @media screen and (max-width: $tablet) {
-    
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  height: auto;
+  min-height: 100vh;
+  @media screen and (max-width: $tablet) {
     height: auto;
-}
+  }
 
-    .stockInfo{
-        display: flex;
-        gap: 20px;
-        min-height: 85vh;
-        height: 100%;
-        
+  .stockInfo {
+    display: flex;
+    gap: 20px;
+    min-height: 85vh;
+    height: 100%;
 
-        .stocklist{
-            flex: 3;
-            height: 100%;
-            @media screen and (max-width: $tablet) {
-                margin-bottom: 40px;
-                height: auto;
-            }
-        }
-        .details{
-            flex: 7;
-            height: 100%;
-            @media screen and (max-width: $tablet) {
-                display: none;
-                
-            }
-        }
+    .stocklist {
+      flex: 3;
+      height: 100%;
+      @media screen and (max-width: $tablet) {
+        margin-bottom: 40px;
+        height: auto;
+      }
     }
-    
-
-}
-
-@media (max-width:1000px){
-    .details{
-      display: none;
+    .details {
+      flex: 7;
+      height: 100%;
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
     }
   }
+}
+
+@media (max-width: 1000px) {
+  .details {
+    display: none;
+  }
+}
