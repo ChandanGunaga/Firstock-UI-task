@@ -1,0 +1,236 @@
+@import "../../assets/sass/main";
+@import "~react-vis/dist/style";
+@import "~react-vis/dist/styles/legends";
+
+.wrapper {
+  height: 100%;
+  background-color: $whiteSmoke;
+  box-shadow: $boxshadow1;
+  border-radius: 10px;
+  padding: 2.5rem;
+
+  .detailsTitle {
+    .stockName {
+      font-size: 20px;
+      font-weight: 500;
+      color: $grey;
+    }
+    .stockSubname {
+      font-size: 14px;
+      color: $grey;
+    }
+  }
+
+  .detailsGraph {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: $boxshadow1;
+    border-radius: 10px;
+  }
+
+  .gridContainer {
+    margin-top: 30px;
+    height: 55%;
+
+    display: flex;
+    gap: 30px;
+
+    .col1 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .barGraph {
+        height: 45%;
+        box-shadow: $boxshadow1;
+        border-radius: 10px;
+
+        .graphAttributes {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 10px 6px 6px 6px;
+          gap: 1rem;
+
+          .leftAtt {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .qty {
+            }
+            .buy {
+              color: $mint;
+            }
+          }
+          .rightAtt {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .qty {
+            }
+            .sell {
+              color: $tropicalIndigo;
+            }
+          }
+        }
+        .graphPlot{
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+        }
+      }
+
+      .qty {
+        display: flex;
+        justify-content: space-between;
+        font-size: 8px;
+      }
+      .priceIndicator {
+        height: 45%;
+        box-shadow: $boxshadow1;
+        border-radius: 10px;
+        padding: 16px 12px 16px 12px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 15px;
+          letter-spacing: -1px;
+          color: $grey;
+        }
+        .greyContainer {
+          border-radius: 10px;
+          background-color: $subtleGrey;
+          width: 100%;
+          height: 100%;
+          margin-top: 12px;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .data1{
+            display: flex;
+            justify-content: space-between;
+           
+
+            .subdata{
+              .subdata1{
+                font-size: 12px;
+              }
+              .subdata2{
+                font-size: 8px;
+              }
+            }
+          }
+          .data2{
+            font-size: 8px;
+          }
+          .data3{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .col2 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .volume {
+        height: 65%;
+        box-shadow: $boxshadow1;
+        border-radius: 10px;
+        padding: 16px 12px 20px 12px;
+        display: flex;
+        flex-direction: column;
+        .title {
+          font-size: 15px;
+          letter-spacing: -1px;
+          color: $grey;
+        }
+        .greyContainer {
+          border-radius: 10px;
+          background-color: $subtleGrey;
+          width: 100%;
+          height: 100%;
+          margin-top: 12px;
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem;
+
+          .leftwrap {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            gap: 1rem;
+            .data1 {
+              font-size: 14px;
+              font-weight: bold;
+            }
+            .data2 {
+              font-size: 8px;
+            }
+          }
+          .rightwrap {
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+            .rightData {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .buttonContainer {
+        height: 35%;
+        box-shadow: $boxshadow1;
+        border-radius: 10px;
+        padding: 2rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .text {
+          font-size: 12px;
+          text-align: center;
+          color: $tiffanyBlue;
+          letter-spacing: -2px;
+        }
+        .link {
+          margin-top: 9px;
+          font-size: 10px;
+          text-align: center;
+        }
+        .button {
+          width: 80%;
+          cursor: pointer;
+          margin-top: 7px;
+          color: $white;
+          background: $buttonGradient;
+          padding: 9px 7px;
+          border-radius: 16px;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:1000px){
+  .wrapper{
+    display: none;
+  }
+}

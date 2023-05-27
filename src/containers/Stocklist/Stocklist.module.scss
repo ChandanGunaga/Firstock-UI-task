@@ -1,0 +1,82 @@
+@import "../../assets/sass/main";
+
+.wrapper {
+  height: 100%;
+  
+  background-color: $whiteSmoke;
+  box-shadow: $boxshadow1;
+  border-radius: 10px;
+  padding: 1.5rem 0;
+
+  .stockItem {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover{
+      box-shadow: $boxshadow1;
+
+    }
+   
+
+    .stockInfoLeft {
+        display: flex;
+        gap: 12px;
+        
+      .stockGraph {
+        height: 60px;
+        width: 60px;
+        background-color: $whiteSmoke;
+        box-shadow: $boxshadow1;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .stockName {
+        font-size: 16px;
+        font-weight: bold;
+        padding-right: 20px;
+      }
+    }
+
+    .stockInfoRight {
+       
+
+        .stockdata1{
+            width: 100px;
+            height: 20px;
+            background-color: $mint;
+            border-radius: 6px;
+            font-size: 10px;
+            text-align: center;
+            color: $white;
+        }
+        .stockdata2{
+            text-align: end;
+            margin-top: 5px;
+            font-size: 14px;
+            color:$mint ;
+        }
+        .stockLossData1{
+          width: 100px;
+          height: 20px;
+          background-color: $burntSienna;
+          border-radius: 6px;
+            font-size: 10px;
+            text-align: center;
+            color: $white;
+        }
+        .stockLossData2{
+          text-align: end;
+            margin-top: 5px;
+            font-size: 14px;
+            color: $burntSienna;
+
+        }
+    }
+    @media screen and (max-width: $tablet) {
+      margin: 10px;
+      
+    }
+  }
+}

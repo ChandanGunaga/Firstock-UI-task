@@ -1,0 +1,87 @@
+@import "../../assets/sass/main";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+
+  .indexFundInfo {
+    display: flex;
+    gap: 10px;
+
+    .infoTab1 {
+    }
+
+    .infoTabs {
+      width: 100px;
+      height: 60px;
+      background-color: $whiteSmoke;
+      box-shadow: $boxshadow1;
+      border-radius: 6px;
+      overflow: hidden;
+
+      .infoTitle{
+        padding: 2px;
+        font-size: 14px;
+      }
+      .infoNum{
+        color: $mint;
+        font-size: 8px;
+      }
+      .graph1{
+        height: 15px;
+        overflow: hidden;
+      }
+      .graph2{
+        height: 15px;
+        overflow: hidden;
+
+        .graphImage{
+          width: 100%;
+          height: 15px;
+          object-fit: contain;
+          height: 12px;
+          object-fit: cover;
+          
+        }
+      }
+    }
+  }
+  .searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+    .searchicon {
+      padding-top: 4px;
+    }
+
+    .notification {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      background: $buttonGradient;
+      padding: 4px 7px;
+      border-radius: 16px;
+      gap: 2px;
+      .bell {
+      }
+      .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        padding-bottom: 5px;
+      }
+    }
+    @media screen and (max-width: $tablet) {
+      position: absolute;
+      top: 28px;
+      right: 30px;
+      
+    }
+  }
+}

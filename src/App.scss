@@ -1,0 +1,19 @@
+@import './assets/sass/main.scss';
+.app{
+    padding: 2rem 4rem;
+    display: flex;
+    gap: 30px;
+    @media screen and (max-width:$tablet) {
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    
+}
+.apexcharts-toolbar {
+    display: none !important;
+  }
+
+  .css-16t5uud{
+    max-width: unset !important;
+  }

@@ -1,0 +1,24 @@
+@import '../src/assets/sass/main'; 
+
+@font-face {
+  font-family: 'robotoMono Regular';
+  src: url('./assets/fonts/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'robotoMono Light';
+  src: url('./assets/fonts/RobotoMono-Light.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  min-height: 100vh;
+  font-family: 'robotoMono Regular';
+  background-color: $antiflashWhite;
+}

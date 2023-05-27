@@ -1,0 +1,55 @@
+@import "../../assets/sass/main";
+
+.wrapper {
+  width: 120px;
+  height: 100%;
+
+  background-color: $whiteSmoke;
+  box-shadow: $boxshadow1;
+  border-radius: 10px;
+  padding: 178px 10px 160px 10px;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    padding: 20px 10px 0 10px;
+    margin-top: unset;
+    min-height: unset;
+  }
+
+  .wishlistContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .wishlist {
+      padding: 0.5rem !important;
+      margin-bottom: 20px !important;
+      min-height: unset !important;
+      // color: $lightGrey;
+      box-shadow: $boxshadow1;
+      border-radius: 8px;
+      @media screen and (max-width: $tablet) {
+        margin: 10px 20px 10px 0 !important;
+        &:first-child {
+          margin-left: 10px !important;
+        }
+        &:last-child {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+
+  .basket {
+    color: $lightGrey;
+    text-align: center;
+    margin-top: 80px;
+    padding: 2rem 10px;
+    border-radius: 8px;
+    box-shadow: $boxshadow1;
+    @media screen and (max-width: $tablet) {
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+}

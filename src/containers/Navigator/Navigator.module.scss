@@ -1,0 +1,48 @@
+@import '../../assets/sass/main'; 
+
+.wrapper{
+   height: auto;
+   min-height: 550px;
+   width: 50px;
+   box-shadow: $boxshadow2;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 130px 0 60px 0;
+   gap: 100px;
+   border-radius: 6px;
+
+   @media  (max-width :$tablet) {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100vw;
+      padding: 10px 50px;
+      flex-direction: row !important;
+      justify-content: center;
+      gap: 60px;
+      background-color: $antiflashWhite;
+      z-index: 9999;
+      min-height: unset;
+    
+
+   }
+   
+  
+
+   .navigation{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      opacity: 0.3;
+      @media (max-width :$tablet) {
+         flex-direction: row !important;
+         gap: 60px;
+      }
+   }
+   .profile{
+      opacity: 0.3;
+   }
+}
